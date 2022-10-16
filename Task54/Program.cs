@@ -47,7 +47,7 @@ void showArray(int[,] inputArray)
     }
 }
 
-int[,] swopRows(int[,] inputArray)
+int[,] SortingString(int[,] inputArray)
 {
     for (int i = 0; i < inputArray.GetLength(0); i++)
     {
@@ -72,7 +72,7 @@ Console.Write("Исходный массив: ");
 Console.WriteLine();
 int[,] generatedArray = generateArray(5,6,10);
 showArray(generatedArray);
-Console.Write("Массив с отсортированными строками: ");
+Console.Write("Новый массив по условию задачи: ");
 Console.WriteLine();
-int[,] swopedArray = swopRows(generatedArray);
-showArray(swopedArray);
+int[,] RegulationStringArray = SortingString(generatedArray);
+showArray(RegulationStringArray);
